@@ -1,3 +1,16 @@
+/* 
+    -- Example Usage --
+
+    Sense.onblocked(function() {
+        alert("Blocked!");
+    });
+
+    Sense.onready(function() {
+        alert("Not Blocked!");
+    });
+
+*/
+
 (function (window, document) {
     'use strict';
 
@@ -83,20 +96,3 @@
     window.Sense = new Sense();
 
 })(window, document);
-
-
-/*console.log("Sense.hasScript(Sense.asyncScript)", Sense.hasScript(Sense.asyncScript, 1));
-console.log("Sense.hasScript(Sense.syncScript)", Sense.hasScript(Sense.syncScript, 1));*/
-
-/* Usage */
-Sense.onblocked(function() {
-    alert("Blocked!");
-
-   /* ga('send', 'event', 'AdSense', 'Ads blocked', { 'nonInteraction': 1 }); */
-});
-
-Sense.onready(function() {
-    alert("Not Blocked!");
-
-   /* ga('send', 'event', 'AdSense', 'Ads not blocked', { 'nonInteraction': 1 }); */
-});
