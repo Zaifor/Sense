@@ -1,4 +1,4 @@
-# Sense
+# Sense.js
 Simple detection for AdSense Adblocker
 
 Example:
